@@ -10,7 +10,7 @@
 <?php
 
 // Соединямся с БД
-$link=mysqli_connect("localhost", "mysql_user", "mysql_password", "base1");
+$link=mysqli_connect("localhost", "php", "Qwe123_!z", "base1");
 
 if(isset($_POST['submit']))
 {
