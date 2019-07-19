@@ -9,7 +9,6 @@
 <body>
 <?php
 var_dump($_POST);
-echo $sql;
 ?>
 <div class="container mregister">
     <div id="login">
