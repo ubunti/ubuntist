@@ -28,8 +28,7 @@ $err[] = "Логин должен быть не меньше 3-х символо
 }
 
 // проверяем, не сущестует ли пользователя с таким именем
-$query = mysqli_query($link, "SELECT user_id FROM users WHERE user_login='".mysqli_real_escape_string($link, $_POST['login'])."'");
-if(mysqli_num_rows($query) > 0)
+    mysqli_query($link,"INSERT INTO users(user_login, user_password) VALUES('".$login."','".$password."')");if(mysqli_num_rows($query) > 0)
 {
 $err[] = "Пользователь с таким логином уже существует в базе данных";
 }
@@ -55,6 +54,7 @@ print $error."<br>";
 }
 }
 }
+var_dump($_POST);
 ?>
 <div class="container mregister">
     <div id="login">
