@@ -8,53 +8,8 @@
 </head>
 <body>
 <?php
-error_reporting(ALL);
-// Соединямся с БД
-$link=mysqli_connect("localhost", "php", "Qwe123_!z", "base1");
-
-if(isset($_POST['submit']))
-{
-$err = [];
-
-// проверям логин
-if(!preg_match("/^[a-zA-Z0-9]+$/",$_POST['login']))
-{
-$err[] = "Логин может состоять только из букв английского алфавита и цифр";
-}
-
-if(strlen($_POST['login']) < 3 or strlen($_POST['login']) > 30)
-{
-$err[] = "Логин должен быть не меньше 3-х символов и не больше 30";
-}
-
-// проверяем, не сущестует ли пользователя с таким именем
-    mysqli_query($link,"INSERT INTO users(user_login, user_password) VALUES('".$login."','".$password."')");if(mysqli_num_rows($query) > 0)
-{
-$err[] = "Пользователь с таким логином уже существует в базе данных";
-}
-
-// Если нет ошибок, то добавляем в БД нового пользователя
-if(count($err) == 0)
-{
-
-$login = $_POST['login'];
-
-// Убераем лишние пробелы и делаем двойное хеширование
-$password = md5(md5(trim($_POST['password'])));
-
-mysqli_query($link,"INSERT INTO users SET user_login='".$login."', user_password='".$password."'");
-header("Location: login.php"); exit();
-}
-else
-{
-print "<b>При регистрации произошли следующие ошибки:</b><br>";
-foreach($err AS $error)
-{
-print $error."<br>";
-}
-}
-}
 var_dump($_POST);
+echo $sql;
 ?>
 <div class="container mregister">
     <div id="login">
