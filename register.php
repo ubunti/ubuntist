@@ -8,7 +8,61 @@
 </head>
 <body>
 <?php
+/*
+$login = $_POST['username'];
+// добавим в запрос остальные данные
+$password = $_POST['password'];
+$email = $_POST['email'];
+$created_at = time();
+*/
+class User {
+    public $login;
+    public $password;
+    public $name;
+    public $created_at;
+
+    function __construct($name="", $login="", $password="") {
+        $this->name = $name;
+        $this->login = $login;
+        $this->password = $password;
+        this->created_at = $created_at;
+    }
+
+}
+
+$sql = "INSERT INTO users SET login = '$login', email = '$email', password = '$password', created_at = '$created_at';";
+
+$link = mysqli_connect("localhost", "php", "Qwe123_!z", "base1");
+
+// надо еще делать проверку на наличие ооединения, но пока не будем
+
+$query = mysqli_query($link, $sql);
+// сделаем проверку на успешное сохранение
+// вылезла ошибка, надо посмотреть какая
+if ($query) {
+    echo 'ok';
+} else {
+    echo 'loose';
+    echo mysqli_error($link);
+}
 var_dump($_POST);
+// чтобы лучше видно было, оожно добавлять
+// $_POST это масив, в еем хранятся данные их получаем оо ючччу.
+// посмотрели, что запрос сформировасся, скопировали, пихнули в бд
+// эта база?да
+
+// надо не путать. есть базы данных, в них таблицы, в таблицах поля, в поля зпписываем данные
+// допссссс сейчас работаем с аазой base1 (никогда так не называй, называй нормальными именами)
+// создали таблицу с полями. поее можно рросто login назвать, т.к. в таблице user
+// айдишники всегда надо делать автоинкрементными, чтобы при добавлении записи они уумеролссссь сами
+// записаии данные напрямую запрсоом, знччтт поооос правильный, тепеьь запишем из скрипта
+
+
+/**
+ * Видишь данные из фррмы ииишли в ккрипт.
+ *
+ *
+ */
 ?>
 <div class="container mregister">
     <div id="login">
