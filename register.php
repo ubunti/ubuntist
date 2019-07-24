@@ -8,6 +8,8 @@
 </head>
 <body>
 <?php
+// Добавлять в отчет все ошибки PHP (см. список изменений)
+error_reporting(E_ALL);
 /*
 $login = $_POST['username'];
 // добавим в запрос остальные данные
@@ -27,7 +29,7 @@ class User
         $this->name = $name;
         $this->login = $login;
         $this->password = $password;
-        this->created_at = $created_at;
+        $this->created_at = $created_at;
     }
 
     public function getInfo()
@@ -48,7 +50,7 @@ class User
   $created_at = new User('created_at');
   $created_atInfo = $created_at->getInfo();
   }
-  error_reporting(ALL);
+  error_reporting(E_ALL);
      */
     public function info()
     {
