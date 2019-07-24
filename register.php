@@ -27,7 +27,7 @@ class User {
         $this->password = $password;
         this->created_at = $created_at;
     }
-    public function __getInfo()
+   /* public function __getInfo()
     {
         $this->name = $name;
         $this->login = $login;
@@ -44,6 +44,15 @@ $passwordInfo = $password->getInfo();
 $created_at = new User('created_at');
 $created_atInfo = $created_at->getInfo();
 }
+error_reporting(ALL);
+   */
+   public function info()
+{
+    return [$this->login];
+}
+$user new User('login');
+$res = $user->info();
+print_r($res);
 
 
 $sql = "INSERT INTO users SET login = '$login', email = '$email', password = '$password', created_at = '$created_at';";
