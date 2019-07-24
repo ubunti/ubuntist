@@ -9,6 +9,7 @@
 <body>
 <?php
 // Добавлять в отчет все ошибки PHP (см. список изменений)
+ini_set('display_errors', 1);
 error_reporting(E_ALL);
 /*
 $login = $_POST['username'];
