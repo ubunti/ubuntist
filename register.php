@@ -35,7 +35,7 @@ class User
         $this->name = $name;
         $this->login = $login;
         $this->password = $password;
-        this->created_at = $created_at;
+        $this->created_at = $created_at;
     }
 
     /*
