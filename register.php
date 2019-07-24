@@ -21,14 +21,30 @@ class User {
     public $name;
     public $created_at;
 
-    function __construct($name="", $login="", $password="") {
+    public function __construct( $login="", $name="", $password="") {
+        $this->name = $name;
+        $this->login = $login;
+        $this->password = $password;
+        this->created_at = $created_at;
+    }
+    public function __getInfo()
+    {
         $this->name = $name;
         $this->login = $login;
         $this->password = $password;
         this->created_at = $created_at;
     }
 
+$user = new User('Login');
+$userInfo = $user->getInfo();
+$name = new User('name');
+$nameInfo = $name->getInfo();
+$password = new User('password');
+$passwordInfo = $password->getInfo();
+$created_at = new User('created_at');
+$created_atInfo = $created_at->getInfo();
 }
+
 
 $sql = "INSERT INTO users SET login = '$login', email = '$email', password = '$password', created_at = '$created_at';";
 
