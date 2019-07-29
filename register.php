@@ -4,40 +4,38 @@
     <meta charset="utf-8">
     <title> Как с помощью PHP и MySQL создать систему регистрации и авторизации пользователей</title>
     <link href="style.css" media="screen" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'rel='stylesheet' type='css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+          rel='stylesheet' type='css'>
 </head>
 <body>
 <?php
 class User{
 
-   public $login, $password, $email, $created_at;
+public $login, $password, $email, $created_at;
 
-    function __construct($login, $password, $email, $created_at)
-       {
-           $this->$login=$login;
-           $this->$password =$password;
-           $this->$email=$email;
-           $this->$created_at =$created_at;
-
+function __construct($login, $password, $email, $created_at)
+{
+$this->$login = $login;
+$this->$password = $password;
+$this->$email = $email;
+$this->$created_at = $created_at;
+}
 //далее проверка на валидность данных о юзере, и
 //если валидны отсылка к методу insertUser()
 //если нет, выдаем сообщение
 
-   function insertUser()
-        {
-$sql = "INSERT INTO users SET login = '$login', email = '$email', password = '$password', created_at = '$created_at';";
-        $link = mysqli_connect("localhost", "php", "Qwe123_!z", "base1");
-$query = mysqli_query($link, $sql);
-if ($query) {
-    echo 'ok';
-} else {
-    echo 'loose';
-    echo mysqli_error($link);
+function insertUser()
+{
+    $sql = "INSERT INTO users SET login = '$login', email = '$email', password = '$password', created_at = '$created_at';";
+    $link = mysqli_connect("localhost", "php", "Qwe123_!z", "base1");
+    $query = mysqli_query($link, $sql);
+    if ($query) {
+        echo 'ok';
+    } else {
+        echo 'loose';
+        echo mysqli_error($link);
+    }
 }
-        }
-
-}
-
 
 
 // Добавлять в отчет все ошибки PHP (см. список изменений)
@@ -85,17 +83,16 @@ $created_at = time();
   }
   error_reporting(E_ALL);
      */
-    /*
+/*
 public function info()
-    {
-        return [$this->login];
-    }
+{
+    return [$this->login];
+}
 $user = new User('login');
 $res = $user->info();
 print_r($res);
 }
 */
-
 
 
 // надо еще делать проверку на наличие ооединения, но пока не будем
@@ -124,22 +121,23 @@ print_r($res);
 <div class="container mregister">
     <div id="login">
         <h1>Регистрация</h1>
-        <form action="register.php" id="registerform" method="post"name="registerform">
+        <form action="register.php" id="registerform" method="post" name="registerform">
             <p><label for="user_login">Полное имя<br>
-                    <input class="input" id="full_name" name="full_name" size="32"  type="text" value=""></label></p>
+                    <input class="input" id="full_name" name="full_name" size="32" type="text" value=""></label></p>
             <p><label for="user_pass">E-mail<br>
                     <input class="input" id="email" name="email" size="32" type="email" value=""></label></p>
             <p><label for="user_pass">Имя пользователя<br>
                     <input class="input" id="username" name="username" size="20" type="text" value=""></label></p>
             <p><label for="user_pass">Пароль<br>
                     <input class="input" id="password" name="password" size="32" type="password" value=""></label></p>
-            <p class="submit"><input class="button" id="register" name= "register" type="submit" value="Зарегистрироваться"></p>
-            <p class="regtext">Уже зарегистрированы? <a href= "login.php">Введите имя пользователя</a>!</p>
+            <p class="submit"><input class="button" id="register" name="register" type="submit"
+                                     value="Зарегистрироваться"></p>
+            <p class="regtext">Уже зарегистрированы? <a href="login.php">Введите имя пользователя</a>!</p>
         </form>
     </div>
 </div>
 <footer>
-футер
+    футер
 </footer>
 </body>
 </html>
