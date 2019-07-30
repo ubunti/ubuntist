@@ -1,5 +1,3 @@
-<?php
-
 class User{
 
     public $login, $password, $email, $created_at;
@@ -28,4 +26,3 @@ class User{
         }
     }
 )
-    ?>
