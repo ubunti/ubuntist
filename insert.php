@@ -27,4 +27,5 @@ class User{
             echo mysqli_error($link);
         }
     }
+)
     ?>
