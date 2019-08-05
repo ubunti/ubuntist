@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+<div id="test">Ждем тут другую надпись</div><br>
+
+<button onclick="loadPhones()">Получаем данные</button>
+
+<script>
+    function loadPhones() {
+        let container = document.getElementById('test');
+
+        console.log(container);
+
+        var xhr = new XMLHttpRequest();
+
+        xhr.open('GET', 'test.php', false);
+        xhr.send();
+
+        if (xhr.status != 200) {
+// обработать ошибку
+            alert('Ошибка ' + xhr.status + ': ' + xhr.statusText);
+        } else {
+// вывести результат
+            container.innerHTML = xhr.responseText;
+            console.log(xhr.responseText);
+        }
+    }
+</script>
+
+</body>
+
+</html>

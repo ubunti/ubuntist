@@ -6,12 +6,12 @@
 <body>
 <?php
 require_once 'connection.php'; // подключаем скрипт
+require_once 'insert1.php';
 
 if(isset($_POST['name']) && isset($_POST['company'])){
 
     // подключаемся к серверу
-    $link = mysqli_connect($host, $user, $password, $database)
-    or die("Ошибка " . mysqli_error($link));
+
 
     // экранирования символов для mysql
     $name = htmlentities(mysqli_real_escape_string($link, $_POST['name']));

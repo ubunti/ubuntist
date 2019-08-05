@@ -1,0 +1,17 @@
+
+Notice: Undefined variable: link in /var/www/php.zzz/2.php on line 17
+
+Warning: mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /var/www/php.zzz/2.php on line 17
+
+Notice: Undefined variable: link in /var/www/php.zzz/2.php on line 18
+
+Warning: mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /var/www/php.zzz/2.php on line 18
+
+Notice: Undefined variable: link in /var/www/php.zzz/2.php on line 24
+
+Warning: mysqli_query() expects parameter 1 to be mysqli, null given in /var/www/php.zzz/2.php on line 24
+
+Notice: Undefined variable: link in /var/www/php.zzz/2.php on line 24
+
+Warning: mysqli_error() expects parameter 1 to be mysqli, null given in /var/www/php.zzz/2.php on line 24
+Ошибка 
