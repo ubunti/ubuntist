@@ -6,7 +6,8 @@
 <body>
 <?php
 require_once 'connection.php'; // подключаем скрипт
-require_once 'Connnect.php';
+require_once 'Connect.php';
+require_once 'Connect.php';
 
 if(isset($_POST['name']) && isset($_POST['company'])){
     // экранирования символов для mysql
