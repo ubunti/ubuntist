@@ -1,9 +1,7 @@
 <?php
-require_once 'connection.php'; // подключаем скрипт
 
 class Connnect
 {
-
     public $link;
 
     public function __construct($user, $password, $database, $host = 'localhost')
