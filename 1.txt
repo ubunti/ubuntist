@@ -14,4 +14,4 @@ Warning: mysqli_query() expects parameter 1 to be mysqli, null given in /var/www
 Notice: Undefined variable: link in /var/www/php.zzz/2.php on line 24
 
 Warning: mysqli_error() expects parameter 1 to be mysqli, null given in /var/www/php.zzz/2.php on line 24
-Ошибка 
+Ошибка

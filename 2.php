@@ -6,13 +6,9 @@
 <body>
 <?php
 require_once 'connection.php'; // подключаем скрипт
-require_once 'insert1.php';
+require_once 'Connnect.php';
 
 if(isset($_POST['name']) && isset($_POST['company'])){
-
-    // подключаемся к серверу
-
-
     // экранирования символов для mysql
     $name = htmlentities(mysqli_real_escape_string($link, $_POST['name']));
     $company = htmlentities(mysqli_real_escape_string($link, $_POST['company']));
@@ -20,7 +16,7 @@ if(isset($_POST['name']) && isset($_POST['company'])){
     // создание строки запроса
     $query ="INSERT INTO tovars VALUES(NULL, '$name','$company')";
 
-    // выполняем запрос
+    // выполняемd запрос
     $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
     if($result)
     {
