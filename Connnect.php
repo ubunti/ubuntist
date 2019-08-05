@@ -19,6 +19,7 @@ class Connnect
     {
         $link = mysqli_connect($host, $user, $password, $database)
         or die("Ошибка " . mysqli_error($link));
+        $this->link = $link;
+
     }
 }
-?>
