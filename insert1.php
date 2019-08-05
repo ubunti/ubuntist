@@ -5,7 +5,7 @@ class connnect
 
     public $link;
 
-    function __construct($host, $user, $password, $database)
+public function __construct($host, $user, $password, $database)
     {
         $this->$host = $host;
         $this->$user = $user;
