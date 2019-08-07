@@ -9,7 +9,7 @@
     <title>Title</title>
     <style>
         {
-        background: url(img/<?php echo $img ?>.jpeg);
+        background: url(<?php echo $img ?>.jpeg);
         background-size: cover;
         color: #ff0;
         }
