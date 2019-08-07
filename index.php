@@ -9,12 +9,11 @@
     <title>Title</title>
     <style>
         {
-        background: url(img/<?php echo $img ?>.img);
+        background: url(img/<?php echo $img ?>.ipeg);
         background-size: cover;
         color: #ff0;
         }
     </style>
-
 </head>
 <body>
 <h1></h1><?php echo $h ?></h1>
