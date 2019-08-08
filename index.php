@@ -8,8 +8,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        {
-        background: url(<?php echo $img ?>.jpeg);
+        body {
+        background: url(img/<?php echo $img ?>.jpg);
         background-size: cover;
         color: #ff0;
         }
