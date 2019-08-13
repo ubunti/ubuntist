@@ -50,3 +50,8 @@ Warning: mysqli_close() expects parameter 1 to be mysqli, null given in /var/www
 Введите модель:
 
 Производитель:
+
+
+ Parse error: syntax error, unexpected '$db' (T_VARIABLE) in /var/www/php.zzz/tovars.php on line 21
+
+ 
