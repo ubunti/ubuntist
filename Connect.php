@@ -1,6 +1,6 @@
 <?php
 
-class Connnect
+class Connect
 {
     public $link;
 
@@ -15,5 +15,4 @@ class Connnect
     {
         return mysqli_query($this->link, $query) or die("Ошибка " . mysqli_error($this->link));
     }
-$db = new Connect($user, $password, $database);
 }
