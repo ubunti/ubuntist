@@ -16,7 +16,8 @@ if(isset($_POST['name']) && isset($_POST['company'])){
     $query ="INSERT INTO tovars VALUES(NULL, '$name','$company')";
 
     // выполняемd запрос
-    $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
+    //$result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
+    $db->query($query);
     if($result)
     {
         echo "<span style='color:blue;'>Данные добавлены</span>";
