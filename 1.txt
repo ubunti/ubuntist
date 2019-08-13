@@ -55,3 +55,13 @@ Warning: mysqli_close() expects parameter 1 to be mysqli, null given in /var/www
  Parse error: syntax error, unexpected '$db' (T_VARIABLE) in /var/www/php.zzz/tovars.php on line 21
 
 
+Notice: Undefined variable: link in /var/www/php.zzz/tovars.php on line 12
+
+Warning: mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /var/www/php.zzz/tovars.php on line 12
+
+Notice: Undefined variable: link in /var/www/php.zzz/tovars.php on line 13
+
+Warning: mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /var/www/php.zzz/tovars.php on line 13
+
+Notice: Undefined variable: result in /var/www/php.zzz/tovars.php on line 22
+
