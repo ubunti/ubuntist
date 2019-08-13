@@ -1,4 +1,11 @@
 Notice: Undefined variable: query in /var/www/php.zzz/connection.php on line 8
 
 Warning: mysqli_query(): Empty query in /var/www/php.zzz/Connect.php on line 16
-Ошибка 
+Ошибка
+
+
+
+Notice: Undefined variable: query in /var/www/php.zzz/connection.php on line 8
+
+Warning: mysqli_query(): Empty query in /var/www/php.zzz/Connect.php on line 16
+Ошибка
