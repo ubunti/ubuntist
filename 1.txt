@@ -22,3 +22,13 @@ Notice: Undefined variable: link in /var/www/php.zzz/tovars.php on line 13
 
 Warning: mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /var/www/php.zzz/tovars.php on line 13
 Ошибка Column count doesn't match value count at row 1
+
+
+
+
+
+
+Notice: Undefined variable: name in /var/www/php.zzz/tovars.php on line 16
+
+Notice: Undefined variable: company in /var/www/php.zzz/tovars.php on line 16
+Ошибка Column count doesn't match value count at row 1
