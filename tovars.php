@@ -9,8 +9,8 @@ require_once 'connection.php'; // подключаем скрипт
 
 if(isset($_POST['name']) && isset($_POST['company'])){
     // экранирования символов для mysql
-    $name = htmlentities(mysqli_real_escape_string($link, $_POST['name']));
-    $company = htmlentities(mysqli_real_escape_string($link, $_POST['company']));
+    //$name = htmlentities(mysqli_real_escape_string($link, $_POST['name']));
+    //$company = htmlentities(mysqli_real_escape_string($link, $_POST['company']));
 
     // создание строки запроса
     $query ="INSERT INTO tovars VALUES(NULL, '$name','$company')";
