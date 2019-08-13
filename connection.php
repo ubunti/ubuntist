@@ -7,4 +7,3 @@ require_once './Connect.php';
 $db = new Connect($user, $password, $database);
 $db->query($query);
 $result = $db->query($query);
-print_r($result);
