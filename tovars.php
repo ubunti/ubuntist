@@ -6,6 +6,7 @@
 <body>
 <?php
 require_once 'connection.php'; // подключаем скрипт
+$link = mysqli_connect($host, $user, $password, $database);
 
 if(isset($_POST['name']) && isset($_POST['company'])){
     // экранирования символов для mysql
@@ -17,7 +18,6 @@ if(isset($_POST['name']) && isset($_POST['company'])){
 
     // выполняемd запрос
     //$result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
-    $link = mysqli_connect($host, $user, $password, $database);
     $db->query($query);
     if($result)
     {
