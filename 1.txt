@@ -65,3 +65,6 @@ Warning: mysqli_real_escape_string() expects parameter 1 to be mysqli, null give
 
 Notice: Undefined variable: result in /var/www/php.zzz/tovars.php on line 22
 
+
+
+ Ошибка Incorrect string value: '\xD0\x92\xD0\xB0\xD1\x81...' for column 'name' at row 1
