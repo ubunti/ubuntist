@@ -11,3 +11,5 @@ class Temp {
 //$b = new $a();
 //$b->ura();
 $d = new Temp();
+$a = $d->foo;
+var_dump($a);
