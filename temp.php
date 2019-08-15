@@ -11,3 +11,9 @@ class Temp {
 $d = new Temp();
 $a = $d->foo;
 var_dump($a);
+$d->foo = 'asdf';
+$d->foo = new Temp();
+$d = new Temp();
+$c = $d->foo;
+var_dump($d);
+
