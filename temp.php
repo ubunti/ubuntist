@@ -39,6 +39,6 @@ class Urok
 
 
 }
-$a = new Urok;
-
+$n = new Urok;
+var_dump($n);
 
