@@ -40,5 +40,6 @@ class Urok
 
 }
 $n = new Urok;
+$n->masy();
 var_dump($n);
 
