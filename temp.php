@@ -7,6 +7,7 @@ class Temp {
         echo $this->foo;
     }
 }
-$a = 'Temp';
-$b = new $a();
-$b->ura();
+//$a = 'Temp';
+//$b = new $a();
+//$b->ura();
+$d = new Temp();
