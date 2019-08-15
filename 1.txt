@@ -74,3 +74,8 @@ Notice: Undefined variable: result in /var/www/php.zzz/tovars.php on line 22
 
 
 
+INSERT INTO tovars VALUES(NULL, 'vasy','vasy')
+Notice: Undefined variable: result in /var/www/php.zzz/tovars.php on line 21
+
+
+
