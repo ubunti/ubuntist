@@ -40,6 +40,13 @@ class Urok
 
 }
 $n = new Urok;
+$n->men();
+var_dump($n);
+$n = new Urok;
+$n->show();
+var_dump($n);
+$n = new Urok;
 $n->masy();
 var_dump($n);
+
 
