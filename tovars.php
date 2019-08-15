@@ -13,12 +13,11 @@ if(isset($_POST['name']) && isset($_POST['company'])){
     $company = htmlentities(mysqli_real_escape_string($link, $_POST['company']));
     // создание строки запроса
     $query ="INSERT INTO tovars VALUES(NULL, '$name','$company')";
-    echo $query;
 
     // выполняемd запрос
     //$result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
     $db->query($query);
-    $result = $db;
+    $result = $db->query($query);
     if($result)
     {
         echo "<span style='color:blue;'>Данные добавлены</span>";
