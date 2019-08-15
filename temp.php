@@ -7,3 +7,6 @@ class Temp {
         echo $this->foo;
     }
 }
+$a = 'Temp';
+$b = new $a();
+$b->ura();
