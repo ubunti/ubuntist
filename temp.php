@@ -1,6 +1,6 @@
 <?php
 
-class Temp {
+/*class Temp {
     public $foo = 'foo';
 
     public function ura(){
@@ -15,5 +15,25 @@ $d->foo = 'asdf';
 $d->foo = new Temp();
 $d = new Temp();
 $c = $d->foo;
-var_dump($d);
+var_dump($c);*/
+
+class Urok
+{
+    public $a;
+    public $b;
+
+    public function show()
+    {
+        return $this->a; // вернем a из свойства
+    }
+    // Метод для изменения a
+    public function men($a)
+    {
+         $this->a=$a;
+    }
+
+
+}
+$a = new Urok;
+
 
