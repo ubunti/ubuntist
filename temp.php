@@ -32,6 +32,11 @@ class Urok
          $this->a=$a;
     }
 
+    public function masy()
+    {
+        return [$this->a, $this->b];
+    }
+
 
 }
 $a = new Urok;
