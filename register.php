@@ -5,6 +5,11 @@ $login = $_POST["login"];
 $email = $_POST["email"];
 $password = $_POST["password"];
 $name = $_POST["name"];
+print_r($_POST);
+/*print_r($_POST["login"]);
+print_r($_POST["email"]);
+print_r($_POST["password"]);
+print_r($_POST["name"]);*/
 
 
 ?>
