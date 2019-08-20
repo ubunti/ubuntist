@@ -1,10 +1,10 @@
 <html>
 <body>
 <?php
-$login = $_POST["login"];
+/*$login = $_POST["login"];
 $email = $_POST["email"];
 $password = $_POST["password"];
-$name = $_POST["name"];
+$name = $_POST["name"];*/
 /*print_r($login);
 print_r($email);
 print_r($password);
@@ -13,10 +13,10 @@ require_once 'connection.php';
 // подключаемся к серверу
 $link = mysqli_connect($host, $user, $password, $database)or die("Ошибка " . mysqli_error($link));
 // экранирования символов для mysql
-$name = htmlentities(mysqli_real_escape_string($link, $_POST['login']));
-$cod = htmlentities(mysqli_real_escape_string($link, $_POST['email']));
-$price = htmlentities(mysqli_real_escape_string($link, $_POST['name']));
-$description = htmlentities(mysqli_real_escape_string($link, $_POST['password']));
+$login = htmlentities(mysqli_real_escape_string($link, $_POST['login']));
+$email = htmlentities(mysqli_real_escape_string($link, $_POST['email']));
+$name = htmlentities(mysqli_real_escape_string($link, $_POST['name']));
+$password = htmlentities(mysqli_real_escape_string($link, $_POST['password']));
 
 // создание строки запроса
 $query = "INSERT INTO users1 VALUES(NULL, '$login','$email','$name','$password')";
