@@ -5,12 +5,27 @@ $login = $_POST["login"];
 $email = $_POST["email"];
 $password = $_POST["password"];
 $name = $_POST["name"];
-print_r($_POST);
-/*print_r($_POST["login"]);
-print_r($_POST["email"]);
-print_r($_POST["password"]);
-print_r($_POST["name"]);*/
+/*print_r($login);
+print_r($email);
+print_r($password);
+print_r($name);*/
+require_once 'connection.php';
+// подключаемся к серверу
+$link = mysqli_connect($host, $user, $password, $database)or die("Ошибка " . mysqli_error($link));
+// экранирования символов для mysql
+$name = htmlentities(mysqli_real_escape_string($link, $_POST['login']));
+$cod = htmlentities(mysqli_real_escape_string($link, $_POST['email']));
+$price = htmlentities(mysqli_real_escape_string($link, $_POST['name']));
+$description = htmlentities(mysqli_real_escape_string($link, $_POST['password']));
 
+// создание строки запроса
+$query = "INSERT INTO users1 VALUES(NULL, '$login','$email','$name','$password')";
+
+// выполняем запрос
+$result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
+if ($result) {
+    echo "<span style='color:blue;'>Данные добавлены</span>";
+}
 
 ?>
 <form action="" method="post">
