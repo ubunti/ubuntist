@@ -1,1 +1,9 @@
- array(5) { ["full_name"]=> string(0) "" ["email"]=> string(0) "" ["username"]=> string(0) "" ["password"]=> string(0) "" ["register"]=> string(36) "Зарегистрироваться" }
+
+Notice: Undefined index: login in /var/www/php.zzz/register.php on line 16
+
+Notice: Undefined index: email in /var/www/php.zzz/register.php on line 17
+
+Notice: Undefined index: name in /var/www/php.zzz/register.php on line 18
+
+Notice: Undefined index: password in /var/www/php.zzz/register.php on line 19
+Ошибка Duplicate entry '' for key 'users_login_uindex'
