@@ -1,0 +1,1 @@
+ array(5) { ["full_name"]=> string(0) "" ["email"]=> string(0) "" ["username"]=> string(0) "" ["password"]=> string(0) "" ["register"]=> string(36) "Зарегистрироваться" }
