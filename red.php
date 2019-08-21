@@ -13,6 +13,7 @@ or die("Ошибка " . mysqli_error($link));
 // если запрос POST
 if(isset($_POST['name']) && isset($_POST['login']) && isset($_POST['email']) && isset($_POST['password'])  && isset($_POST['id'])){
 
+    $id = htmlentities(mysqli_real_escape_string($link, $_POST['id']));
     $login = htmlentities(mysqli_real_escape_string($link, $_POST['login']));
     $email = htmlentities(mysqli_real_escape_string($link, $_POST['email']));
     $name = htmlentities(mysqli_real_escape_string($link, $_POST['name']));
@@ -28,7 +29,7 @@ if(isset($_POST['name']) && isset($_POST['login']) && isset($_POST['email']) && 
 // если запрос GET
 if(isset($_GET['id']))
 {
-    $id = htmlentities(mysqli_real_escape_string($link, $_GET['id']));
+    $id = htmlentities(mysqli_real_escape_string($link, (int)$_GET['id']));
 
     // создание строки запроса
     $query ="SELECT * FROM users1 WHERE id = '$id'";
