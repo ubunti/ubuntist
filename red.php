@@ -10,6 +10,8 @@ require_once 'connection.php'; // подключаем скрипт
 $link = mysqli_connect($host, $user, $password, $database)
 or die("Ошибка " . mysqli_error($link));
 
+
+
 // если запрос POST
 if(isset($_POST['name']) && isset($_POST['login']) && isset($_POST['email']) && isset($_POST['password'])  && isset($_POST['id'])){
 
@@ -27,7 +29,7 @@ if(isset($_POST['name']) && isset($_POST['login']) && isset($_POST['email']) && 
 }
 
 // если запрос GET
-if(isset($_GET['id']))
+$id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
 {
     $id = (int)$_GET['id'];
 
