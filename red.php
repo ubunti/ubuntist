@@ -29,7 +29,7 @@ if(isset($_POST['name']) && isset($_POST['login']) && isset($_POST['email']) && 
 // если запрос GET
 if(isset($_GET['id']))
 {
-    $id = htmlentities(mysqli_real_escape_string($link, (int)$_GET['id']));
+    $id = (int)$_GET['id'];
 
     // создание строки запроса
     $query ="SELECT * FROM users1 WHERE id = '$id'";
