@@ -29,10 +29,11 @@ if(isset($_POST['name']) && isset($_POST['login']) && isset($_POST['email']) && 
 }
 
 // если запрос GET
-$id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
-{
-    $id = (int)$_GET['id'];
+if(isset($_GET['id']))
 
+{
+    //$id = (int)$_GET['id'];
+    $id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
     // создание строки запроса
     $query ="SELECT * FROM users1 WHERE id = '$id'";
     // выполняем запрос
