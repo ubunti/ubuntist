@@ -1,1 +1,1 @@
- array(2) { ["login"]=> string(3) "jpc" ["password"]=> string(3) "jpc" } 
+ string(56) "SELECT*FROM users WHERE login="vasy" AND password="vasy"" 
