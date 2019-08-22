@@ -9,4 +9,7 @@
 
  array(2) { ["login"]=> string(5) "login" ["password"]=> string(8) "password" } string(61) "SELECT*FROM users WHERE login='login' AND password='password'" NULL
 
+
+ array(2) { ["login"]=> string(5) "login" ["password"]=> string(8) "password" } string(62) "SELECT*FROM users1 WHERE login='login' AND password='password'" NULL
+
  
