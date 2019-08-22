@@ -1,1 +1,6 @@
- string(56) "SELECT*FROM users WHERE login="vasy" AND password="vasy"" 
+ string(56) "SELECT*FROM users WHERE login="vasy" AND password="vasy""
+
+
+
+
+ array(2) { ["login"]=> string(5) "login" ["password"]=> string(8) "password" } string(61) "SELECT*FROM users WHERE login="login" AND password="password"" NULL 
